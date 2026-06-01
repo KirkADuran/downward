@@ -485,6 +485,30 @@ create_fast_downward_library(
 )
 
 create_fast_downward_library(
+    NAME plugin_alternating_astar_wastar
+    HELP "Alternating A*/WA* search"
+    SOURCES
+        search_algorithms/plugin_alternating_astar_wastar
+    DEPENDS
+        eager_search
+        alternation_open_list
+        best_first_open_list
+        g_evaluator
+        sum_evaluator
+        weighted_evaluator
+)
+
+create_fast_downward_library(
+    NAME plugin_my_astar
+    HELP "My A* search"
+    SOURCES
+        search_algorithms/plugin_my_astar
+    DEPENDS
+        eager_search
+        search_common
+)
+
+create_fast_downward_library(
     NAME plugin_eager
     HELP "Eager (i.e., normal) best-first search"
     SOURCES
@@ -554,6 +578,42 @@ create_fast_downward_library(
         ordered_set
         pref_evaluator
         search_common
+        successor_generator
+)
+
+create_fast_downward_library(
+    NAME focal_search
+    HELP "Focal search"
+    SOURCES
+        search_algorithms/focal_search
+    DEPENDS
+        successor_generator
+)
+
+create_fast_downward_library(
+    NAME alternating_wastar_focal_gbfs
+    HELP "Alternating WA*/focal GBFS search"
+    SOURCES
+        search_algorithms/alternating_wastar_focal_gbfs
+    DEPENDS
+        successor_generator
+)
+
+create_fast_downward_library(
+    NAME alternating_wastar_focal_random
+    HELP "Alternating WA*/focal random search"
+    SOURCES
+        search_algorithms/alternating_wastar_focal_random
+    DEPENDS
+        successor_generator
+)
+
+create_fast_downward_library(
+    NAME type_wastar
+    HELP "Type-WA* search"
+    SOURCES
+        search_algorithms/type_wastar
+    DEPENDS
         successor_generator
 )
 
@@ -711,6 +771,13 @@ create_fast_downward_library(
     DEPENDS
         priority_queues
         relaxation_heuristic
+)
+
+create_fast_downward_library(
+    NAME manhattan_heuristic
+    HELP "The Manhattan distance heuristic"
+    SOURCES
+        heuristics/manhattan_heuristic
 )
 
 create_fast_downward_library(
