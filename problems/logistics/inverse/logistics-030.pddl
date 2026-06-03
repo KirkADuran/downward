@@ -1,0 +1,73 @@
+(define (problem logistics-ipc-030-inverse)
+  (:domain logistics)
+
+  (:objects
+    city1 city2 city3 city4 city5 city6 city7 city8 city9 city10 - city
+    city1-1 city1-2 city2-1 city2-2 city3-1 city3-2 city4-1 city4-2 city5-1 city5-2 city6-1 city6-2 city7-1 city7-2 city8-1 city8-2 city9-1 city9-2 city10-1 city10-2 - location
+    truck1 truck2 truck3 truck4 truck5 truck6 truck7 truck8 truck9 truck10 - truck
+    plane1 plane2 plane3 plane4 - airplane
+    package1 package2 package3 package4 package5 - package
+  )
+
+  (:init
+    (= (total-cost) 0)
+    (= (package-cost package1) 5)
+    (= (package-cost package2) 4)
+    (= (package-cost package3) 3)
+    (= (package-cost package4) 2)
+    (= (package-cost package5) 1)
+    (= (drive-cost) 1)
+    (= (fly-cost) 1)
+    (in-city city10-2 city10)
+    (in-city city10-1 city10)
+    (in-city city9-2 city9)
+    (in-city city9-1 city9)
+    (in-city city8-2 city8)
+    (in-city city8-1 city8)
+    (in-city city7-2 city7)
+    (in-city city7-1 city7)
+    (in-city city6-2 city6)
+    (in-city city6-1 city6)
+    (in-city city5-2 city5)
+    (in-city city5-1 city5)
+    (in-city city4-2 city4)
+    (in-city city4-1 city4)
+    (in-city city3-2 city3)
+    (in-city city3-1 city3)
+    (in-city city2-2 city2)
+    (in-city city2-1 city2)
+    (in-city city1-2 city1)
+    (in-city city1-1 city1)
+    (at plane4 city3-2)
+    (at plane3 city7-2)
+    (at plane2 city3-2)
+    (at plane1 city6-2)
+    (at truck10 city10-1)
+    (at truck9 city9-1)
+    (at truck8 city8-1)
+    (at truck7 city7-1)
+    (at truck6 city6-1)
+    (at truck5 city5-1)
+    (at truck4 city4-1)
+    (at truck3 city3-1)
+    (at truck2 city2-1)
+    (at truck1 city1-1)
+    (at-package package5 city1-2)
+    (at-package package4 city7-2)
+    (at-package package3 city3-2)
+    (at-package package2 city10-1)
+    (at-package package1 city2-2)
+  )
+
+  (:goal
+    (and
+      (at-package package5 city4-2)
+      (at-package package4 city6-1)
+      (at-package package3 city1-1)
+      (at-package package2 city9-2)
+      (at-package package1 city3-1)
+    )
+  )
+
+  (:metric minimize (total-cost))
+)

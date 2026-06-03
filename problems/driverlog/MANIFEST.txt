@@ -1,0 +1,27 @@
+domain=domains/driverlog.pddl
+source=/tmp/pddl-instances-master/ipc-2002/domains/driverlog-strips-automatic/instances
+instances=20
+cost_models=unit,value,inverse,heavy
+
+# Imported from Potassco's pddl-instances IPC benchmark mirror.
+# Instances are converted to the local cost-aware domain vocabulary.
+001: source=instance-1.pddl init_atoms=22 goal_atoms=4
+002: source=instance-2.pddl init_atoms=27 goal_atoms=7
+003: source=instance-3.pddl init_atoms=28 goal_atoms=6
+004: source=instance-4.pddl init_atoms=25 goal_atoms=9
+005: source=instance-5.pddl init_atoms=30 goal_atoms=8
+006: source=instance-6.pddl init_atoms=28 goal_atoms=10
+007: source=instance-7.pddl init_atoms=33 goal_atoms=10
+008: source=instance-8.pddl init_atoms=34 goal_atoms=11
+009: source=instance-9.pddl init_atoms=54 goal_atoms=10
+010: source=instance-10.pddl init_atoms=76 goal_atoms=8
+011: source=instance-11.pddl init_atoms=90 goal_atoms=7
+012: source=instance-12.pddl init_atoms=140 goal_atoms=10
+013: source=instance-13.pddl init_atoms=176 goal_atoms=8
+014: source=instance-14.pddl init_atoms=121 goal_atoms=9
+015: source=instance-15.pddl init_atoms=176 goal_atoms=10
+016: source=instance-16.pddl init_atoms=223 goal_atoms=19
+017: source=instance-17.pddl init_atoms=248 goal_atoms=23
+018: source=instance-18.pddl init_atoms=299 goal_atoms=23
+019: source=instance-19.pddl init_atoms=322 goal_atoms=34
+020: source=instance-20.pddl init_atoms=337 goal_atoms=33

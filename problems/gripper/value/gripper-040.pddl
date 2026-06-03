@@ -1,0 +1,60 @@
+(define (problem gripper-040-value)
+  (:domain gripper)
+
+  (:objects
+    room0 room1 room2 room3 - room
+    ball1 ball2 ball3 ball4 ball5 ball6 ball7 ball8 ball9 ball10 ball11 ball12 - ball
+    left right - gripper
+  )
+
+  (:init
+    (= (total-cost) 0)
+    (= (move-cost) 1)
+    (= (ball-cost ball1) 1)
+    (= (ball-cost ball2) 2)
+    (= (ball-cost ball3) 3)
+    (= (ball-cost ball4) 4)
+    (= (ball-cost ball5) 5)
+    (= (ball-cost ball6) 6)
+    (= (ball-cost ball7) 7)
+    (= (ball-cost ball8) 8)
+    (= (ball-cost ball9) 9)
+    (= (ball-cost ball10) 10)
+    (= (ball-cost ball11) 11)
+    (= (ball-cost ball12) 12)
+    (at-robby room3)
+    (free left)
+    (free right)
+    (at ball1 room3)
+    (at ball2 room1)
+    (at ball3 room3)
+    (at ball4 room3)
+    (at ball5 room1)
+    (at ball6 room2)
+    (at ball7 room2)
+    (at ball8 room2)
+    (at ball9 room2)
+    (at ball10 room1)
+    (at ball11 room3)
+    (at ball12 room1)
+  )
+
+  (:goal
+    (and
+      (at ball1 room0)
+      (at ball2 room3)
+      (at ball3 room2)
+      (at ball4 room1)
+      (at ball5 room2)
+      (at ball6 room0)
+      (at ball7 room3)
+      (at ball8 room0)
+      (at ball9 room1)
+      (at ball10 room0)
+      (at ball11 room0)
+      (at ball12 room0)
+    )
+  )
+
+  (:metric minimize (total-cost))
+)

@@ -1,0 +1,27 @@
+domain=domains/satellite.pddl
+source=/tmp/pddl-instances-master/ipc-2002/domains/satellite-strips-automatic/instances
+instances=20
+cost_models=unit,value,inverse,heavy
+
+# Imported from Potassco's pddl-instances IPC benchmark mirror.
+# Instances are converted to the local cost-aware domain vocabulary.
+001: source=instance-1.pddl init_atoms=5 goal_atoms=3
+002: source=instance-2.pddl init_atoms=11 goal_atoms=5
+003: source=instance-3.pddl init_atoms=20 goal_atoms=5
+004: source=instance-4.pddl init_atoms=17 goal_atoms=8
+005: source=instance-5.pddl init_atoms=44 goal_atoms=8
+006: source=instance-6.pddl init_atoms=26 goal_atoms=7
+007: source=instance-7.pddl init_atoms=41 goal_atoms=9
+008: source=instance-8.pddl init_atoms=49 goal_atoms=10
+009: source=instance-9.pddl init_atoms=58 goal_atoms=13
+010: source=instance-10.pddl init_atoms=55 goal_atoms=12
+011: source=instance-11.pddl init_atoms=46 goal_atoms=14
+012: source=instance-12.pddl init_atoms=51 goal_atoms=19
+013: source=instance-13.pddl init_atoms=46 goal_atoms=27
+014: source=instance-14.pddl init_atoms=63 goal_atoms=19
+015: source=instance-15.pddl init_atoms=85 goal_atoms=24
+016: source=instance-16.pddl init_atoms=111 goal_atoms=23
+017: source=instance-17.pddl init_atoms=114 goal_atoms=20
+018: source=instance-18.pddl init_atoms=58 goal_atoms=13
+019: source=instance-19.pddl init_atoms=109 goal_atoms=28
+020: source=instance-20.pddl init_atoms=122 goal_atoms=41

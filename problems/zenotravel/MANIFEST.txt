@@ -1,0 +1,27 @@
+domain=domains/zenotravel.pddl
+source=/tmp/pddl-instances-master/ipc-2002/domains/zenotravel-strips-automatic/instances
+instances=20
+cost_models=unit,value,inverse,heavy
+
+# Imported from Potassco's pddl-instances IPC benchmark mirror.
+# Instances are converted to the local cost-aware domain vocabulary.
+001: source=instance-1.pddl init_atoms=3 goal_atoms=3
+002: source=instance-2.pddl init_atoms=4 goal_atoms=3
+003: source=instance-3.pddl init_atoms=6 goal_atoms=5
+004: source=instance-4.pddl init_atoms=7 goal_atoms=5
+005: source=instance-5.pddl init_atoms=6 goal_atoms=4
+006: source=instance-6.pddl init_atoms=7 goal_atoms=5
+007: source=instance-7.pddl init_atoms=8 goal_atoms=6
+008: source=instance-8.pddl init_atoms=9 goal_atoms=7
+009: source=instance-9.pddl init_atoms=10 goal_atoms=7
+010: source=instance-10.pddl init_atoms=11 goal_atoms=9
+011: source=instance-11.pddl init_atoms=10 goal_atoms=8
+012: source=instance-12.pddl init_atoms=11 goal_atoms=8
+013: source=instance-13.pddl init_atoms=13 goal_atoms=10
+014: source=instance-14.pddl init_atoms=15 goal_atoms=12
+015: source=instance-15.pddl init_atoms=20 goal_atoms=14
+016: source=instance-16.pddl init_atoms=20 goal_atoms=17
+017: source=instance-17.pddl init_atoms=25 goal_atoms=23
+018: source=instance-18.pddl init_atoms=25 goal_atoms=21
+019: source=instance-19.pddl init_atoms=30 goal_atoms=27
+020: source=instance-20.pddl init_atoms=30 goal_atoms=25
